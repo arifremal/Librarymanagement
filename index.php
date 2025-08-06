@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Management</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+    <style>
+          body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+    </style>
 </head>
 <body>
     <div class="container my-5">
@@ -53,8 +60,8 @@
                         <td>{$row['edition']}</td>
                         <td>{$row['created_at']}</td>
                         <td>
-                            <a class='btn btn-primary btn-sm' href='/librarymanagement/edit.php?id={$row['id']}'>Edit</a>
-                            <a class='btn btn-danger btn-sm' href='/librarymanagement/delete.php?id={$row['id']}'>Delete</a>
+                            <a class='btn btn-primary btn-sm' href='/edit.php?id={$row['id']}'>Edit</a>
+                            <a class='btn btn-danger btn-sm' href='/delete.php?id={$row['id']}'>Delete</a>
                         </td>
                     </tr>
                     ";
