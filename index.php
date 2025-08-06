@@ -9,7 +9,7 @@
 <body>
     <div class="container my-5">
         <h1>List of Books</h1>
-        <button type="button" onclick="window.location.href='/librarymanagement/addbook'" class="btn btn-dark">Add Book</button>
+        <button type="button" onclick="window.location.href='/create.php'" class="btn btn-dark">Add Book</button>
         <br><br>
         <table class="table table-striped table-bordered">
             <thead class="table-dark">
