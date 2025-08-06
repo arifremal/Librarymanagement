@@ -4,7 +4,7 @@ require_once 'config.php';
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     
-    // Prepare a delete statement
+  
     $stmt = $conn->prepare("DELETE FROM books WHERE id = ?");
     $stmt->bind_param("i", $id);
     
