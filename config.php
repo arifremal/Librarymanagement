@@ -1,15 +1,18 @@
 <?php
-// Database configuration
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_NAME', 'library');
+// Database settings
+$servername = "localhost";  // Server name (usually 'localhost')
+$username = "root";         // Default MySQL username in XAMPP
+$password = "";             // Default password is empty in XAMPP
+$dbname = "library";        // Database name we created
 
-// Create connection
-$conn = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+// Connect to MySQL
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
+// Start session (for success/error messages)
+session_start();
 ?>
