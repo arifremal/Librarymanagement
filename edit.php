@@ -15,7 +15,7 @@ $book = $result->fetch_assoc();
 $stmt->close();
 
 if (!$book) {
-    header("Location: view_books.php");
+    header("Location: index.php");
     exit();
 }
 
